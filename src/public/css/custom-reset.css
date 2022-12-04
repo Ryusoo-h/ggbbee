@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("../font/NanumSquareRoundR.woff2") format("woff2"), url("../font/NanumSquareRoundR.woff") format("woff"), url("../font/NanumSquareRoundR.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("../font/NanumSquareRoundL.woff2") format("woff2"), url("../font/NanumSquareRoundL.woff") format("woff"), url("../font/NanumSquareRoundL.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("../font/NanumSquareRoundB.woff2") format("woff2"), url("../font/NanumSquareRoundB.woff") format("woff"), url("../font/NanumSquareRoundB.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("../font/NanumSquareRoundEB.woff2") format("woff2"), url("../font/NanumSquareRoundEB.woff") format("woff"), url("../font/NanumSquareRoundEB.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CookieRunOTF";
+  src: url("../font/CookieRun Regular.woff2") format("woff2"), url("../font/CookieRun Regular.woff") format("woff"), url("../font/CookieRun Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CookieRunOTF";
+  src: url("../font/CookieRun Bold.woff2") format("woff2"), url("../font/CookieRun Bold.woff") format("woff"), url("../font/CookieRun Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CookieRunOTF";
+  src: url("../font/CookieRun Black.woff2") format("woff2"), url("../font/CookieRun Black.woff") format("woff"), url("../font/CookieRun Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+.basic-text {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "NanumSquareRound";
+  line-height: 1.4em;
+}
+
+.basic-text-light {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "NanumSquareRound";
+  line-height: 1.4em;
+  font-weight: 200;
+}
+
+.point-text {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "CookieRunOTF";
+  line-height: 1.6em;
+}
+
+.point-text-S {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "CookieRunOTF";
+  line-height: 1.6em;
+  font-size: 13px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "CookieRunOTF";
+  line-height: 1.4em;
+}
+
+.title-L {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "CookieRunOTF";
+  line-height: 1.4em;
+  font-size: 20px;
+}
+
+.main-title {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "CookieRunOTF";
+  line-height: 1.4em;
+  font-size: 40px;
+}
+
+.sub-title {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "CookieRunOTF";
+  line-height: 1.4em;
+  font-size: 24px;
+}
+
+.point {
+  color: #648EFA;
+}
+
+.point2 {
+  color: #FAD26D;
+}
+
+body {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "NanumSquareRound";
+  line-height: 1.4em;
+  background-color: #FFFFFF;
+}/*# sourceMappingURL=custom-reset.css.map */

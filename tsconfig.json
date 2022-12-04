@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "strict": true, // TS의 기능을 얼마나 엄격하게 적용해서 변환시킬 것인가
+        "target": "ES5", // 어떤 문법체계를 쓸것인가
+        "module": "CommonJS",
+        "alwaysStrict": true,
+        "noImplicitAny": true, 
+					// JS에서 옵션이 명시되어있지않으면 any(어떤 타입이든 된다)인데 그것을 끔. 
+					// true : any를 쓰지 못하도록 함
+        "noImplicitThis": true,
+        "sourceMap": true,
+        "downlevelIteration": true
+    }
+}

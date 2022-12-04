@@ -1,0 +1,323 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+:lang(ko) {
+  word-break: keep-all;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+[class] {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[class]::before,
+[class]::after {
+  box-sizing: border-box;
+}
+
+[class]:where(ol, ul) {
+  list-style: none;
+}
+
+[class]:where(button, fieldset, iframe, input, select, textarea) {
+  border: 0;
+}
+
+[class]:where(button, dialog, input, mark, meter, progress) {
+  background-color: transparent;
+}
+
+[class]:where(table) {
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+[class]:where(button, input, meter, progress, select, textarea) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("../font/NanumSquareRoundR.woff2") format("woff2"), url("../font/NanumSquareRoundR.woff") format("woff"), url("../font/NanumSquareRoundR.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("../font/NanumSquareRoundL.woff2") format("woff2"), url("../font/NanumSquareRoundL.woff") format("woff"), url("../font/NanumSquareRoundL.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("../font/NanumSquareRoundB.woff2") format("woff2"), url("../font/NanumSquareRoundB.woff") format("woff"), url("../font/NanumSquareRoundB.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("../font/NanumSquareRoundEB.woff2") format("woff2"), url("../font/NanumSquareRoundEB.woff") format("woff"), url("../font/NanumSquareRoundEB.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CookieRunOTF";
+  src: url("../font/CookieRun Regular.woff2") format("woff2"), url("../font/CookieRun Regular.woff") format("woff"), url("../font/CookieRun Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CookieRunOTF";
+  src: url("../font/CookieRun Bold.woff2") format("woff2"), url("../font/CookieRun Bold.woff") format("woff"), url("../font/CookieRun Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CookieRunOTF";
+  src: url("../font/CookieRun Black.woff2") format("woff2"), url("../font/CookieRun Black.woff") format("woff"), url("../font/CookieRun Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+.basic-text {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "NanumSquareRound";
+  line-height: 1.4em;
+}
+
+.basic-text-light {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "NanumSquareRound";
+  line-height: 1.4em;
+  font-weight: 200;
+}
+
+.point-text {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "CookieRunOTF";
+  line-height: 1.6em;
+}
+
+.point-text-S {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "CookieRunOTF";
+  line-height: 1.6em;
+  font-size: 13px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "CookieRunOTF";
+  line-height: 1.4em;
+}
+
+.title-L {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "CookieRunOTF";
+  line-height: 1.4em;
+  font-size: 20px;
+}
+
+.main-title {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "CookieRunOTF";
+  line-height: 1.4em;
+  font-size: 40px;
+}
+
+.sub-title {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "CookieRunOTF";
+  line-height: 1.4em;
+  font-size: 24px;
+}
+
+.point {
+  color: #648EFA;
+}
+
+.point2 {
+  color: #FAD26D;
+}
+
+body {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "NanumSquareRound";
+  line-height: 1.4em;
+  background-color: #FFFFFF;
+}
+
+#root {
+  position: relative;
+  overflow-y: auto;
+  width: 360px;
+  height: 749px;
+  margin: 40px auto;
+  background-color: #F6F6F6;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+#root::-webkit-scrollbar {
+  width: 8px; /*스크롤바의 너비*/
+}
+
+#root::-webkit-scrollbar-thumb {
+  /*스크롤바*/
+  background-color: #d1d1d1;
+  border-radius: 4px;
+}
+
+#root::-webkit-scrollbar-track {
+  /* 스크롤바 트랙*/
+  background-color: white;
+}
+
+header#main-header {
+  background-color: #FFFFFF;
+  padding: 24px;
+}
+
+.container {
+  padding: 0 12px;
+  margin: 0 12px;
+}
+
+#splash-screen {
+  position: fixed;
+  z-index: 9999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F6F6F6;
+}
+#splash-screen .flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#splash-screen .wrapper {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#splash-screen .wrapper > p {
+  font-size: 18px;
+  color: #878787;
+  padding: 8px 0;
+}
+#splash-screen .wrapper > .main-cake {
+  font-size: 80px;
+  line-height: 100px;
+  opacity: 0.8;
+}
+
+.tabbutton-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  padding: 24px 0 8px;
+}
+.tabbutton-wrapper .tabbutton {
+  font-size: 13px;
+  background-color: #eee;
+  padding: 8px 20px;
+}
+.tabbutton-wrapper .tabbutton:first-child {
+  border-radius: 6px 0 0 6px;
+}
+.tabbutton-wrapper .tabbutton:last-child {
+  border-radius: 0 6px 6px 0;
+}
+.tabbutton-wrapper .tabbutton.current {
+  background-color: #648EFA;
+  color: #FFFFFF;
+}
+
+.tab-wrapper {
+  position: relative;
+}
+.tab-wrapper [role=tabpanel] {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.tab-wrapper [role=tabpanel].current {
+  z-index: 2;
+  opacity: 1;
+}
+
+.list caption {
+  display: none;
+}
+.list table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "NanumSquareRound";
+}
+.list table th {
+  display: none;
+}
+.list table tr:hover, .list table tr:active {
+  background-color: white;
+}
+.list table td {
+  padding: 6px 4px;
+  border-bottom: solid 1px #eee;
+}
+.list table .item {
+  text-align: left;
+  min-width: calc(100% - 130px);
+}
+.list table .read {
+  text-align: center;
+  width: 50px;
+}
+.list table .read span {
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 11px;
+}
+.list table .read span.no-read {
+  background-color: #d1d1d1;
+}
+.list table .read span.reading {
+  background-color: #FAD26D;
+}
+.list table .read span.read {
+  background-color: #648EFA;
+}
+.list table .date {
+  text-align: center;
+  width: 80px;
+  color: #878787;
+  font-size: 11px;
+}/*# sourceMappingURL=style.css.map */

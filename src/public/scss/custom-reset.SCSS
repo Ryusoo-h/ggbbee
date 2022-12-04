@@ -1,0 +1,143 @@
+
+@font-face { // 나눔스퀘어라운드 레귤러
+    // 나눔스퀘어라운드 : https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff
+    font-family: 'NanumSquareRound';
+    src: url('../font/NanumSquareRoundR.woff2') format('woff2'),
+        url('../font/NanumSquareRoundR.woff') format('woff'),
+        url('../font/NanumSquareRoundR.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face { // 나눔스퀘어라운드 라이트
+    font-family: 'NanumSquareRound';
+    src: url('../font/NanumSquareRoundL.woff2') format('woff2'),
+        url('../font/NanumSquareRoundL.woff') format('woff'),
+        url('../font/NanumSquareRoundL.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face { // 나눔스퀘어라운드 라이트
+    font-family: 'NanumSquareRound';
+    src: url('../font/NanumSquareRoundB.woff2') format('woff2'),
+        url('../font/NanumSquareRoundB.woff') format('woff'),
+        url('../font/NanumSquareRoundB.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face { // 나눔스퀘어라운드 라이트
+    font-family: 'NanumSquareRound';
+    src: url('../font/NanumSquareRoundEB.woff2') format('woff2'),
+        url('../font/NanumSquareRoundEB.woff') format('woff'),
+        url('../font/NanumSquareRoundEB.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face { // 쿠키런 레귤러
+    font-family: 'CookieRunOTF';
+    src: url('../font/CookieRun\ Regular.woff2') format('woff2'),
+        url('../font/CookieRun\ Regular.woff') format('woff'),
+        url('../font/CookieRun\ Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face { // 쿠키런 볼드
+    font-family: 'CookieRunOTF';
+    src: url('../font/CookieRun\ Bold.woff2') format('woff2'),
+        url('../font/CookieRun\ Bold.woff') format('woff'),
+        url('../font/CookieRun\ Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face { // 쿠키런 블랙
+    font-family: 'CookieRunOTF';
+    src: url('../font/CookieRun\ Black.woff2') format('woff2'),
+        url('../font/CookieRun\ Black.woff') format('woff'),
+        url('../font/CookieRun\ Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+$font: (
+    basic: 'NanumSquareRound',
+    point: 'CookieRunOTF',
+);
+
+$font-base: 13px;
+$point-font-base: 15px;
+$padding-base: 8px;
+
+@mixin font-default {
+    font: {
+        size: $font-base;
+        weight: 400;
+        family: map-get($font, basic);
+    }
+    line-height: 1.4em;
+}
+.basic-text {
+    @include font-default;
+}
+.basic-text-light {
+    @include font-default;
+    font-weight: 200;
+}
+
+@mixin point-font-default {
+    font: {
+        size: $point-font-base;
+        weight: 400;
+        family: map-get($font, point);
+    }
+    line-height: 1.6em;
+}
+.point-text {
+    @include point-font-default;
+}
+.point-text-S {
+    @include point-font-default;
+    font-size: $font-base;
+}
+
+@mixin title-default {
+    font: {
+        size: $point-font-base;
+        weight: 700;
+        family: map-get($font, point);
+    }
+    line-height: 1.4em;
+}
+.title {
+    @include title-default;
+}
+.title-L {
+    @include title-default;
+    font-size: 20px;
+}
+.main-title {
+    @include title-default;
+    font-size: 40px;
+}
+.sub-title {
+    @include title-default;
+    font-size: 24px;
+}
+
+$color: (
+    bg-color: #F6F6F6,
+    point: #648EFA,
+    point-light: #93B1FF,
+    point2: #FAD26D,
+    point2-light: #FFE5A1,
+    white: #FFFFFF,
+    gray87: #878787,
+    grayd1: #d1d1d1,
+    grayee: #eee
+);
+.point { color: map-get($color, point); }
+.point2 { color: map-get($color, point2); }
+
+body {
+    @include font-default;
+    background-color: map-get($color, white);
+}
